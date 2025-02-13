@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instructions Page</title>
+  <style>
+    /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Header Section */
+header {
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 60px;
+}
+
+.header-text h1 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.header-text p {
+  font-size: 14px;
+}
+
+/* Instructions Section */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.instructions {
+  flex: 3;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.instructions h2 {
+  background-color: #f0f8ff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.instruction-header {
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.instruction-list {
+  margin-left: 20px;
+}
+
+.status-list {
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+.status-box {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 4px;
+}
+
+/* Candidate Details */
+.candidate-details {
+  flex: 1;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.candidate-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.candidate-details p {
+  font-weight: bold;
+}
+
+/* Next Button */
+.next-btn {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.next-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .instructions, .candidate-details {
+    margin-bottom: 20px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="c:\Users\shiva\OneDrive\Pictures\Saved Pictures\Gate-logo.webp" alt="GATE Logo" class="logo">
+      <div class="header-text">
+        <h1>Graduate Aptitude Test in Engineering</h1>
+        <p>Organised by Dhole Patil College Of Engineering</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="instructions">
+      <h2>Instructions</h2>
+      <p class="instruction-header">Read the following instructions carefully</p>
+      <h3>General Instructions:</h3>
+      <ol class="instruction-list">
+        <li>Total duration of the examination is <strong>180 minutes</strong>. Calculator is available on the top, right-hand side of the screen.</li>
+        <li>The clock will be set at the server. The countdown timer in the top right corner of the screen will display the remaining time available for you to complete the examination. When the timer reaches zero, the examination will end by itself. You will not be required to end or submit your examination.</li>
+        <li>
+          The Question Palette displayed on the right-hand side of the screen will show the status of each question using one of the following symbols:
+          <ul class="status-list">
+            <li><span class="status-box" style="background-color: gray;">1</span> You have not visited the question yet.</li>
+            <li><span class="status-box" style="background-color: orange;">2</span> You have not answered the question.</li>
+            <li><span class="status-box" style="background-color: green;">3</span> You have answered the question.</li>
+            <li><span class="status-box" style="background-color: purple;">4</span> You have NOT answered the question, but have marked the question for review.</li>
+            <li><span class="status-box" style="background-color: blue;">5</span> The question(s) "Answered and Marked for Review" will be considered for evaluation.</li>
+          </ul>
+        </li>
+      </ol>
+       <a href="t&C.html"><button class="next-btn">Next</button></a>
+    </section>
+    <aside class="candidate-details">
+      <img src="c:\Users\shiva\OneDrive\Pictures\Saved Pictures\shubhamphotograph.jpeg" alt="Candidate Photo" class="candidate-photo">
+      <p>Shivam Parve</p>
+    </aside>
+  </main>
+</body>
+</html>
